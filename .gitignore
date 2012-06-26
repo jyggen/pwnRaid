@@ -1,0 +1,5 @@
+fuel/app/logs/*/*/*
+fuel/app/cache/*/*
+public/assets/css/*
+public/assets/tpl/*
+public/assets/js/*
