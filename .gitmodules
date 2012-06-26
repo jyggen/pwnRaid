@@ -1,0 +1,3 @@
+[submodule "fuel/packages/buildr"]
+	path = fuel/packages/buildr
+	url = git://github.com/jyggen/Buildr.git
