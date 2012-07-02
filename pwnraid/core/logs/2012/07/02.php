@@ -406,3 +406,27 @@ Warning - 2012-07-02 21:49:39 --> Fuel\Core\Fuel::init - The configured locale e
 Warning - 2012-07-02 21:51:49 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
 Warning - 2012-07-02 21:51:49 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
 Warning - 2012-07-02 21:51:49 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+Warning - 2012-07-02 21:56:06 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+Warning - 2012-07-02 21:56:06 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+Warning - 2012-07-02 21:56:06 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+Warning - 2012-07-02 23:17:28 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+Warning - 2012-07-02 23:17:46 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+Error - 2012-07-02 23:17:46 --> 2 - include_once(PHPUnit/Autoload.php): failed to open stream: No such file or directory in C:\Users\jyggen\Documents\GitHub\pwnRaid\pwnraid\packages\oil\classes\command.php on line 156
+Error - 2012-07-02 23:17:46 --> 2 - include_once(): Failed opening 'PHPUnit/Autoload.php' for inclusion (include_path='.;C:\php\pear') in C:\Users\jyggen\Documents\GitHub\pwnRaid\pwnraid\packages\oil\classes\command.php on line 156
+Warning - 2012-07-02 23:32:21 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+Warning - 2012-07-02 23:35:46 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+Warning - 2012-07-02 23:39:01 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+Warning - 2012-07-02 23:39:07 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+Warning - 2012-07-02 23:39:13 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+Warning - 2012-07-02 23:42:22 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+Warning - 2012-07-02 23:42:22 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+Debug - 2012-07-02 23:42:31 --> testing log debug
+Error - 2012-07-02 23:42:31 --> testing log error
+Debug - 2012-07-02 23:42:31 --> Log::debug - testing log debug
+Error - 2012-07-02 23:42:31 --> Log::error - testing log error
+Warning - 2012-07-02 23:43:10 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+Warning - 2012-07-02 23:43:10 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+Debug - 2012-07-02 23:43:12 --> testing log debug
+Error - 2012-07-02 23:43:12 --> testing log error
+Debug - 2012-07-02 23:43:12 --> Log::debug - testing log debug
+Error - 2012-07-02 23:43:12 --> Log::error - testing log error
