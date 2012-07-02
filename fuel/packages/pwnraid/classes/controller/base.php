@@ -1,5 +1,7 @@
 <?php
-class Controller_Base extends Controller_Hybrid {
+namespace pwnRaid;
+
+class Controller_Base extends \Controller_Hybrid {
 
 	public $template = 'base.twig';
 
@@ -8,9 +10,9 @@ class Controller_Base extends Controller_Hybrid {
 		parent::before($data);
 
 		// Unable to load pwnraid config? Setup!
-		if(!Config::load('pwnraid') && $this->request->controller != 'Controller_Setup') {
+		if(!\Config::load('pwnraid') && $this->request->controller != 'Controller_Setup') {
 
-			Response::redirect('/setup');
+			\Response::redirect('/setup');
 
 		}
 
@@ -20,10 +22,10 @@ class Controller_Base extends Controller_Hybrid {
 
 		$response = parent::after($response);
 
-		if($response->body instanceof View || $response->body instanceof ViewModel) {
+		if($response->body instanceof \View || $response->body instanceof \ViewModel) {
 
-			$css = Buildr::generate_links('css');
-			$js  = Buildr::generate_links('js');
+			$css = \Buildr::generate_links('css');
+			$js  = \Buildr::generate_links('js');
 
 			$controller = strtolower(str_replace('Controller_', '', $this->request->controller));
 			$action     = $this->request->action;
@@ -34,7 +36,7 @@ class Controller_Base extends Controller_Hybrid {
 			$this->template->set_safe('js_files', $js);
 			$this->template->set_safe('css_files', $css);
 
-			return Response::forge($this->template, $response->status);
+			return \Response::forge($this->template, $response->status);
 
 		} else {
 

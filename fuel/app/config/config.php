@@ -43,7 +43,7 @@ return array(
 	'routing'			=> array('case_sensitive' => true),
 	'module_paths'      => array(),
 	'always_load'       => array(
-							'packages' => array('buildr', 'parser'),
+							'packages' => array('pwnraid', 'buildr', 'parser'),
 							'modules'  => array(),
 							'classes'  => array(),
 							'config'   => array(),

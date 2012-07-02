@@ -1,7 +1,7 @@
 <?php
-class View_Home_404 extends View_Base {
+namespace pwnRaid;
 
-	protected $_view = 'home/404.twig';
+class View_Home_404 extends View_Base {
 
 	public function view() {
 
