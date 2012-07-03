@@ -1,5 +1,6 @@
 <?php
 define('DOCROOT', __DIR__.DIRECTORY_SEPARATOR);
+define('USRPATH', realpath(__DIR__.'/../config/').DIRECTORY_SEPARATOR);
 define('APPPATH', realpath(__DIR__.'/../pwnraid/core/').DIRECTORY_SEPARATOR);
 define('PKGPATH', realpath(__DIR__.'/../pwnraid/packages/').DIRECTORY_SEPARATOR);
 define('COREPATH', realpath(__DIR__.'/../pwnraid/fuel/').DIRECTORY_SEPARATOR);
