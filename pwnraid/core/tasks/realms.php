@@ -48,7 +48,7 @@ class Realms {
 
 		}
 
-		\Config::save('realms.json', $realm_list);
+		\Config::save(APPPATH.'config'.DS.'realms', $realm_list);
 
 	}
 
