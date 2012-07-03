@@ -13,17 +13,11 @@
 	<div role="text-wrapper" class="clearfix">
 		<div class="float-left">
 			<label>Region</label>
-			<select name="regions">
-				<option value="US">Americas</option>
-				<option value="CH">China</option>
-				<option value="EU">Europe</option>
-				<option value="KR">Korea</option>
-				<option value="TW">Taiwan</option>
-			</select>
+			{{ form_select('regions', 'none', regions) }}
 		</div>
 		<div class="float-left">
 			<label>Realm</label>
-			<input type="text" data-autocomplete="realms" value="">
+			{{ form_input('realms') }}
 		</div>
 		<div class="float-left">
 			<label>Guild Name</label>

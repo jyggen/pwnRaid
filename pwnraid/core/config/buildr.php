@@ -22,6 +22,7 @@ return array(
 				),
 				'plugins' => array(
 					'jquery.autocomplete.js',
+					'jquery.data.js',
 					'jquery.simplemodal.js',
 				),
 				'script' => array(
