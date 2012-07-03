@@ -1,5 +1,6 @@
-fuel/app/logs/*/*/*
-fuel/app/cache/*/*
+pwnraid/core/tmp/*
+pwnraid/core/logs/*/*/*
+pwnraid/core/cache/*/*
 public/assets/css/*
 public/assets/tpl/*
 public/assets/js/*

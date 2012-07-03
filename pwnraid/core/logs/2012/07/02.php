@@ -436,3 +436,6 @@ Debug - 2012-07-02 23:50:07 --> testing log debug
 Error - 2012-07-02 23:50:07 --> testing log error
 Debug - 2012-07-02 23:50:07 --> Log::debug - testing log debug
 Error - 2012-07-02 23:50:07 --> Log::error - testing log error
+Warning - 2012-07-02 23:55:19 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+Warning - 2012-07-02 23:55:19 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+Warning - 2012-07-02 23:55:19 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
