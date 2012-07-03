@@ -7,10 +7,16 @@ class Controller_Base extends Controller_Hybrid {
 
 		parent::before($data);
 
+		$is_installed = Config::load('pwnraid.yml');
+
 		// Unable to load pwnraid config? Setup!
-		if(!Config::load('pwnraid.yml') && $this->request->controller != 'Controller_Setup') {
+		if(!$is_installed && $this->request->controller != 'Controller_Setup') {
 
 			Response::redirect('/setup');
+
+		} elseif($is_installed && $this->request->controller == 'Controller_Setup') {
+
+			throw new HttpNotFoundException;
 
 		}
 
