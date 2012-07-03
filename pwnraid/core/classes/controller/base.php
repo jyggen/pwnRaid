@@ -8,7 +8,7 @@ class Controller_Base extends Controller_Hybrid {
 		parent::before($data);
 
 		// Unable to load pwnraid config? Setup!
-		if(!Config::load('pwnraid') && $this->request->controller != 'Controller_Setup') {
+		if(!Config::load('pwnraid.yml') && $this->request->controller != 'Controller_Setup') {
 
 			Response::redirect('/setup');
 

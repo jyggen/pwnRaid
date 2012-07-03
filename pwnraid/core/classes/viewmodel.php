@@ -13,7 +13,7 @@ abstract class ViewModel extends \Fuel\Core\ViewModel
 		{
 			// Take the class name and guess the view name
 			$class = get_class($this);
-			$this->_view = strtolower(str_replace('_', DS, preg_replace('#^([a-z0-9_]*\\\\)?(View_)?#i', '', $class)).'twig');
+			$this->_view = strtolower(str_replace('_', DS, preg_replace('#^([a-z0-9_]*\\\\)?(View_)?#i', '', $class)).'.twig');
 		}
 
 		$this->set_view();
