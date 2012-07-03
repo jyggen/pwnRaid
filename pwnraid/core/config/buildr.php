@@ -36,7 +36,9 @@ return array(
 		'tpl' => array(
 			'groups' => array(
 				'help' => array(
+					'cache.handlebars',
 					'dsn.handlebars',
+					'session.handlebars',
 				),
 			),
 			'ext'  => 'js',

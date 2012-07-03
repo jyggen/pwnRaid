@@ -9,21 +9,6 @@
 	<p>Please, contact us at anytime with feedback, bug reports and love letters at <a href="mailto:hello@pwnraid.com">hello@pwnraid.com</a>!</p>
 </div>
 <form>
-	<h2>Database Settings</h2>
-	<div role="text-wrapper" class="clearfix">
-			<div class="float-left">
-				<label>Data Source Name (<a href="javascript:void(0);" class="help" data-help="dsn">What's this?</a>)</label>
-				<input type="text" value="">
-			</div>
-			<div class="float-left">
-				<label>Username</label>
-				<input type="text" value="">
-			</div>
-			<div class="float-left">
-				<label>Password</label>
-				<input type="password" value="">
-			</div>
-	</div>
 	<h2>Guild Information</h2>
 	<div role="text-wrapper" class="clearfix">
 		<div class="float-left">
@@ -43,6 +28,41 @@
 		<div class="float-left">
 			<label>Guild Name</label>
 			<input type="text" value="">
+		</div>
+	</div>
+	<h2>Database Settings</h2>
+	<div role="text-wrapper" class="clearfix">
+		<div class="float-left">
+			<label>Data Source Name (<a href="javascript:void(0);" class="help" data-help="dsn">What's this?</a>)</label>
+			<input type="text" value="">
+		</div>
+		<div class="float-left">
+			<label>Username</label>
+			<input type="text" value="">
+		</div>
+		<div class="float-left">
+			<label>Password</label>
+			<input type="password" value="">
+		</div>
+	</div>
+	<h2>System Settings</h2>
+	<div role="text-wrapper" class="clearfix">
+		<div class="float-left">
+			<label>Cache Driver (<a href="javascript:void(0);" class=help data-help=cache>What's this?</a>)</label>
+			<select>
+				<option value=apc>APC</option>
+				<option value=file selected>File</option>
+				<option value=memcached>Memcached</option>
+			</select>
+		</div>
+		<div class="float-left">
+			<label>Session Driver (<a href="javascript:void(0);" class="help" data-help="session">What's this?</a>)</label>
+			<select>
+				<option value=cookie>Cookie</option>
+				<option value=db>Database</option>
+				<option value=file selected>File</option>
+				<option value=memcached>Memcached</option>
+			</select>
 		</div>
 	</div>
 </form>

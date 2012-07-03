@@ -41,10 +41,10 @@ return array(
 						   ),
 	'validation'        => array('global_input_fallback' => true),
 	'routing'			=> array('case_sensitive' => true),
-	'module_paths'      => array(APPPATH.'..'.DS.'..'.DS),
+	'module_paths'      => array(),
 	'always_load'       => array(
 							'packages' => array('buildr', 'parser'),
-							'modules'  => array('pwnraid'),
+							'modules'  => array(),
 							'classes'  => array(),
 							'config'   => array(),
 							'language' => array(),

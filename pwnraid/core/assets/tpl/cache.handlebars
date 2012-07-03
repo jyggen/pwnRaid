@@ -1,0 +1,21 @@
+<div role="text-wrapper">
+	<dl>
+		<dt>What is a cache driver?</dt>
+		<dd><p>This allows pwnRaid to cache (store) the result of a resource heavy operation and use that again later. pwnRaid currently support the following drivers:</p>
+			<ul>
+				<li>APC</li>
+				<li>File</li>
+				<li>Memcached</li>
+			</ul>
+		</dd>
+		<dt>Which driver should I pick?</dt>
+		<dd>
+			<p>It depends on your system, environment and what you've got installed.</p>
+			<ul>
+				<li><strong>APC</strong> is definitely your best pick if you've got it installed/know how to install it.</li>
+				<li><strong>File</strong> is the way to go if you're on a shared host or isn't that tech-savvy. Works out-of-the-box.</li>
+				<li><strong>Memcached</strong> is your driver of choise if you're load balancing pwnRaid over multiple servers.</li>
+			</ul>
+		</dd>
+	</dl>
+</div>
