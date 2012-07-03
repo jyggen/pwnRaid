@@ -4,4 +4,5 @@ pwnraid/core/cache/*/*
 public/assets/css/*
 public/assets/tpl/*
 public/assets/js/*
+config/*
 */!.gitkeep
