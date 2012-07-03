@@ -8,12 +8,14 @@ class Controller_Base extends Controller_Hybrid {
 		parent::before($data);
 
 		$is_installed = Config::load('pwnraid.yml');
+		$is_404       = ($this->request->controller == 'Controller_Index' && $this->request->action == '404');
 
-		// Unable to load pwnraid config? Setup!
-		if(!$is_installed && $this->request->controller != 'Controller_Setup') {
+		// Non-Ajax Request to a non-404 page when the system isn't installed? Setup time!
+		if(!Input::is_ajax() && !$is_installed && !$is_404 && $this->request->controller != 'Controller_Setup') {
 
 			Response::redirect('/setup');
 
+		// Otherwise, throw a HttpNotFound if we try to run the setup again.
 		} elseif($is_installed && $this->request->controller == 'Controller_Setup') {
 
 			throw new HttpNotFoundException;

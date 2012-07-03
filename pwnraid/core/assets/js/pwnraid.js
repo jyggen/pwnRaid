@@ -7,7 +7,9 @@ var pwnRaid = {
 	},
 	setup: {
 		index: function(element) {
-			element.on('.realm-suggest').autoComplete({ajax:'/api/realms'});
+
+			var realms;
+			$.ajax({url: '/realms/list', method: 'GET', success: function(data){ realms = data; }});
 		}
 	}
 };
