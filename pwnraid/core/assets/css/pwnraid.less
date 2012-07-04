@@ -279,3 +279,30 @@ footer {
 		}
 	}
 }
+
+.auto-complete-list {
+	position: absolute;
+	z-index: 100;
+	max-height: 250px;
+	padding: 0;
+	margin: 0;
+	overflow: auto;
+	list-style-type: none;
+ 	li {
+		padding: 6px;
+		margin: 0;
+		color: black;
+		text-shadow: none;
+		list-style-type: none;
+		cursor: pointer;
+		background-color: white;
+		border: 1px solid #303858;
+		border-top: none;
+		&.auto-complete-list-rollover {
+			background-color: #c5c5c5;
+		}
+	}
+	.auto-complete-striped {
+		background-color: #D7EEF9;
+	}
+}

@@ -11,13 +11,13 @@ var pwnRaid = {
 			var selected = element.find('#form_regions option:selected').attr('value').toLowerCase(),
 				$realms  = element.find('#form_realms');
 
-			$realms.data('region', selected);
+			$realms.autoComplete({ajax: '/realms/list/'+selected, requestType: 'GET'});
 
-			element.find('#form_regions option').each(function() {
-				var region = $(this).attr('value').toLowerCase();
-				element.find('#form_realms:data(region=='+region+')').autoComplete({ajax: '/realms/list/'+region, requestType: 'GET'});
+			element.find('#form_regions').on('change', function(){
+				selected = $(this).find('option:selected').attr('value').toLowerCase();
+				$realms.autoComplete('destroy');
+				$realms.autoComplete({ajax: '/realms/list/'+selected, requestType: 'GET'});
 			});
-			element.find('#form_regions').on('change', function(){ $realms.data('region', $(this).find('option:selected').attr('value')); });
 
 		}
 	}
